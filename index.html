@@ -12,50 +12,101 @@
 
     <nav class="navigation">
         <div class="navigation__inner">
-            <div>
-                <a href="#" class="navigation__logo">
-                    <img src="LOGO" alt="logo firmy">
-                </a>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#product">O PRODUKCIE</a></li>
-                    <li><a href="#montage">MONTAŻ</a></li>
-                    <li><a href="#gallery">GALERIA</a></li>
-                    <li><a href="#contact">ZAMÓW</a></li>
-                    <li><a href="#contact">KONTAKT</a></li>
-                </ul>
-            </div>
+            <a href="#" class="navigation__logo-link">
+                <img src="img\logo zebra.jpg" alt="logo">
+            </a>
+            <ul class="navigation__menu">
+                <li class="navigation__menu-item">
+                    <a href="#home" class="navigation__menu-link">
+                        home
+                    </a>
+                </li>
+                <li class="navigation__menu-item">
+                    <a href="#product" class="navigation__menu-link">
+                        o produkcie
+                    </a>
+                </li>
+                <li class="navigation__menu-item">
+                    <a href="#montage" class="navigation__menu-link">
+                        montaż
+                    </a>
+                </li>
+                <li class="navigation__menu-item">
+                    <a href="#contact" class="navigation__menu-link">
+                        zamów
+                    </a>
+                </li>
+                <li class="navigation__menu-item">
+                    <a href="#gallery" class="navigation__menu-link">
+                        galeria
+                    </a>
+                </li>
+                <li class="navigation__menu-item">
+                    <a href="#contact" class="navigation__menu-link">
+                        kontakt
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
 
 
-    <section>
-        <div>
-            <h1>ŁÓŻKO PEGAZ</h1>
-            <p>Funkcjonalny mebel o prostej formie.<br>
-                Praktyczna skrzynia z pojemnikiem oraz podnoszonym stelażem<br>
-                tworzą dodatkową przestrzeń do przechowywania.</p>
-            <a href="#produkt" target="_blank" title="przenieś do sklepu">Zamów</a>
+    <section class="banner">
+        <div class="banner__text">
+            <h1 class="banner__text-header">
+                ŁÓŻKO PEGAZ
+            </h1>
+            <p class="banner__text-paragraph">
+                Funkcjonalny mebel o prostej formie.
+            </p>
+            <a href="#product" class="banner__button">
+                zobacz więcej
+            </a>
         </div>
     </section>
 
-    <section id="produkt">
-        <div>
-            <div>
-                <img src="OBRAZEKŁÓŻKO" alt="łóżko pegaz">
-            </div>
-            <div>
-                <h2>Czym się wyróżnia?</h2>
-                <p>Skrzynia łóżka zbudowana jest z płyty laminowanej firmy
-                    <em>KRONOPOL</em>, o grubości 18 mm. Boki skrzyni, na których
-                    opiera się stelaż, zmontowane są jednak z <strong>płyty podwójnej</strong>
+    <section id="#product" class="about-product">
+        <div class="about-product__inner">
+            <img src="img/lozko.png" alt="łóżko" class="about-product__images">
+            <div class="about-product__description">
+                <h2 class="about-product__description-header">
+                    Czym się wyróżnia?
+                </h2>
+                <p class="about-product__description-parapgraph">
+                    Skrzynia łóżka zbudowana jest z płyty laminowanej firmy
+                    KRONOPOL, o grubości 18 mm. Boki skrzyni, na których
+                    opiera się stelaż, zmontowane są jednak z płyty podwójnej
                     o łącznej grubości 36 mm. Daje to niemal 100% gwarancję
                     niewyrwania podnośników ze skrzyni. Sprawia, że cała
                     konstrukcja jest mocna i trwała, nawet przy dużych obciążeniach.
 
-                    Solidny <strong>stelaż stalowy</strong> na siłownikach gazowych ułatwia
+                    Solidny stelaż stalowy na siłownikach gazowych ułatwia
+                    szybki dostęp do pojemnika na pościel. Dno wykończone jest
+                    płytą HDF.
+
+                    Listwy stelaża, wykonane z drewna brzozowego, są elastyczne
+                    i sprężynujące, co sprawia, że idealnie dopasowują się do kształtu
+                    ciała i materaca. Czyni to łóżko jeszcze bardziej komfortowym.
+                </p>
+                <div>
+                    ZAMÓW
+                </div>
+            </div>
+        </div>
+        <div id="#montage" class="monntage__inner">
+            <div class="montage__description">
+                <h2 class="montage__description-header">
+                    Montaż łóżka
+                </h2>
+                <p class="montage__description-parapgraph">
+                    Skrzynia łóżka zbudowana jest z płyty laminowanej firmy
+                    KRONOPOL, o grubości 18 mm. Boki skrzyni, na których
+                    opiera się stelaż, zmontowane są jednak z płyty podwójnej
+                    o łącznej grubości 36 mm. Daje to niemal 100% gwarancję
+                    niewyrwania podnośników ze skrzyni. Sprawia, że cała
+                    konstrukcja jest mocna i trwała, nawet przy dużych obciążeniach.
+
+                    Solidny stelaż stalowy na siłownikach gazowych ułatwia
                     szybki dostęp do pojemnika na pościel. Dno wykończone jest
                     płytą HDF.
 
@@ -64,17 +115,10 @@
                     ciała i materaca. Czyni to łóżko jeszcze bardziej komfortowym.
                 </p>
             </div>
-            <div id="product">
-                <h3>Parametry tecniczne:</h3>
-
-                <span>Istnieje możliwość wykonania łóżka o innej wysokości skrzyni lub zagłówka.</span>
+            <img src="img/lozko.png" alt="montaż" class="montage__images">
+            <div class="montage__file">
+                Pobierz PDF ze szczegółową instrukcją.
             </div>
-        </div>
-        <div>
-            <h2>Montaż</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/XzaE0BBTFk4" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
         </div>
     </section>
 
@@ -107,11 +151,10 @@
         </div>
     </section>
 
-    <section id="realizacje">
-        <h3>Galeria realizacji</h3>
-        <audio controls>
-            <source src="#" type="audio/mpeg">
-        </audio>
+    <section id="#gallery" class="gallery">
+        <h2>
+            Galeria realizacji
+        </h2>
         <div>
             <h3>Opinie z allegro</h3>
             <div>
@@ -134,13 +177,13 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="#contact">
         <div>
             <h2>KONTAKT</h2>
             <span>Masz pytania? Chcesz złożyć zamówienie? Problem z montażem?</span>
             <div>
                 <div>
-                    <img src="OBRAZEK_MAIL" alt="symbol email">
+                    <img src="OBRAZEK_MAIL" alt="email">
                 </div>
                 <div>
                     <h3>Napisz</h3>
@@ -149,7 +192,7 @@
             </div>
             <div>
                 <div>
-                    <img src="OBRAZEK_TEL" alt="symbol telefon">
+                    <img src="OBRAZEK_TEL" alt="telefon">
                 </div>
                 <div>
                     <h3>Zadzwoń</h3>
