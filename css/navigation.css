@@ -1,0 +1,121 @@
+.navigation {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 20px;
+}
+
+.navigation__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.navigation__logo {
+    width: 300px;
+}
+
+@media (max-width: 1024px) {
+    .navigation__logo {
+        width: 250px;
+        padding: 10px;
+    }
+}
+
+.navigation__menu {
+    display: flex;
+    margin: 0; 
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    transition: 1s;
+    transition-property: opacity, transform;
+}
+
+@media (max-width: 769px) {
+    .navigation__menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 769px) {
+    .navigation__menu--open {
+        opacity: 1;
+        pointer-events: unset;
+    }
+}
+
+.navigation__menu-item {
+    margin-left: 20px;
+    padding: 5px;
+}
+
+@media (max-width: 769px) {
+    .navigation__menu-item {
+        margin-left: 0;
+        padding: 15px;
+    }
+}
+
+.navigation__menu-item:hover {
+    outline: 4px #ffd727 solid;
+}
+
+.navigation__menu-link {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 1s;
+}
+
+@media (max-width: 1024px) {
+    .navigation__menu-link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 769px) {
+    .navigation__menu-link {
+        font-size: 22px;
+    }
+}
+
+.navigation__menu-link:hover {
+    color: #999;
+}
+
+.navigation__mobile-button {
+    display: none;
+}
+
+@media (max-width: 769px) {
+    .navigation__mobile-button {
+        display: unset;
+        border: none;
+        background: white;
+    }
+}
+
+.navigation__mobile-button-img {
+    width: 30px;
+    display: block;
+}

@@ -19,14 +19,14 @@
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: 0.7;
+    opacity: 0.8;
     position: absolute;
-    transition: all 3s;
+    transition: all 5s;
     z-index: 2;
 }
 
 .opacity:hover {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .banner__text-header {
@@ -46,6 +46,7 @@
 
 .banner__text-paragraph {
     top: 100px;
+    color: #999;
     font-size: 24px;
     margin: 20px 0;
     position: relative;
@@ -62,7 +63,6 @@
 .banner__button {
     top: 100px;
     border: 3px #ffd727 solid;
-    cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
     color: white;
@@ -70,8 +70,4 @@
     position: relative;
     margin: 20px 0;
     z-index: 3;
-}
-
-.banner__button:hover {
-    opacity: 0.5;
 }

@@ -6,38 +6,40 @@
     <meta name="description" content="Zebra system - producent łóżek z podnoszonym stelażem">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zebra System</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
-    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/container.css">
-    <link rel="stylesheet" href="css/about-product.css">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/container.css">
     <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/about-product.css">
+    <link rel="stylesheet" href="css/montage.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
 
-    <section class="banner">
-            <div class="opacity">
-                
-            </div>
-            <h1 class="banner__text-header">
-                ŁÓŻKO PEGAZ
-            </h1>
-            <p class="banner__text-paragraph">
-                Funkcjonalny mebel w prostej formie.
-            </p>
-            <a href="#product" class="banner__button">
-                zobacz więcej
-            </a>
+    <section id="home" class="banner">
+        <div class="intro">
+        </div>
+        <h1 class="banner__text-header">
+            ŁÓŻKO PEGAZ
+        </h1>
+        <p class="banner__text-paragraph">
+            Funkcjonalny mebel w prostej formie.
+        </p>
+        <a href="#product" class="banner__button">
+            zobacz więcej
+        </a>
     </section>
 
     <nav class="navigation">
         <div class="navigation__inner">
-            <a href="#" class="navigation__logo-link">
-                <img src="img\logo zebra.jpg" alt="logo">
+            <a href="#">
+                <img src="img\logo zebra.jpg" alt="logo" class="navigation__logo">
             </a>
-            <ul class="navigation__menu">
+            <ul class="navigation__menu navigation__menu">
                 <li class="navigation__menu-item">
                     <a href="#home" class="navigation__menu-link">
                         home
@@ -45,7 +47,7 @@
                 </li>
                 <li class="navigation__menu-item">
                     <a href="#product" class="navigation__menu-link">
-                        o produkcie
+                        o&nbsp;produkcie
                     </a>
                 </li>
                 <li class="navigation__menu-item">
@@ -69,12 +71,17 @@
                     </a>
                 </li>
             </ul>
+            <button class="navigation__mobile-button js-navigation__mobile-button">
+                <img src="img/menu-button.svg" alt="Otwórz / zamknij nawigację" class="navigation__mobile-button-img">
+            </button>
         </div>
     </nav>
 
-    <section id="product" class="about-product">
-        <div class="container">
-            <div class="about-product__inner">
+    <script src="js/navigation.js"></script>
+
+    <div class="container">
+        <section id="product">
+            <div class="about-product">
                 <img src="img/lozko.png" alt="łóżko" class="about-product__img">
                 <div class="about-product__description">
                     <h2 class="about-product__description-header">
@@ -87,24 +94,20 @@
                         o łącznej grubości 36 mm. Daje to niemal 100% gwarancję
                         niewyrwania podnośników ze skrzyni. Sprawia, że cała
                         konstrukcja jest mocna i trwała, nawet przy dużych obciążeniach.
-
+                    <p class="about-product__description-parapgraph">
                         Solidny stelaż stalowy na siłownikach gazowych ułatwia
                         szybki dostęp do pojemnika na pościel. Pojemna skrzynia tworzy
                         dodatkową przestrzeń do przechowywania. Dno wykończone jest
                         płytą HDF.
-
+                    </p>
+                    <p class="about-product__description-parapgraph">
                         Listwy stelaża, wykonane z drewna brzozowego, są elastyczne
                         i sprężynujące, co sprawia, że idealnie dopasowują się do kształtu
                         ciała i materaca. Czyni to łóżko jeszcze bardziej komfortowym.
                     </p>
-                    <a href="contact" title="zamówienie" class="about-product__button">
-                        zamow
-                    </a>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div id="montage" class="monntage__inner">
+            <div id="montage" class="montage">
                 <div class="montage__description">
                     <h2 class="montage__description-header">
                         Montaż łóżka
@@ -113,20 +116,25 @@
                         Produkt otrzymujesz w trzech starannie zapakowanych paczkach.
                         W każdej z nich znajdują się elementy do samodzielnego montażu mebla
                         oraz szczegółowa instrukcja. Składanie łóżka nie jest skomplikowane, przyda
-                        się jednak pomoc drugiej osoby ze względu na gabaryty elementów. Montaż polega
+                        się jednak pomoc drugiej osoby ze względu na gabaryty elementów. 
+                    </p>
+                    <p class="montage__description-parapgraph">
+                        Montaż polega
                         na połączeniu płyt tworzących skrzynię i zagłowek, przy pomocy specjalnych zaczepów.
                         Następnie montuje się dno z płyt hdf. Ostatnim krokiem jest zainstalowanie podnośników
                         oraz sprężyn gazowych i umieszczenie na nim stelaża.
                     </p>
                 </div>
                 <img src="img/lozko.png" alt="montaż" class="montage__img">
+            </div>
+            <div class="montage__button-box">
                 <a href="img/instrukcja montazu.pdf" target="_blank" download="instrukcja montazu.pdf"
                     class="montage__file">
-                    Pobierz PDF ze szczegółową instrukcją.
+                    Pobierz PDF z instrukcją
                 </a>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <section class="icon-box">
         <div class="container">
@@ -207,16 +215,16 @@
             </p>
             <div class="contact-box">
                 <div class="contact-box__item">
-                    <img src="img/email.svg" alt="email">
+                    <img src="img/email.svg" alt="email" class="contact__icon">
                 </div>
-                <div >
+                <div>
                     <h4>Napisz</h4>
                     <p>kontakt@zebrasystem.pl</p>
                 </div>
             </div>
             <div class="contact-box">
                 <div>
-                    <img src="img/smartphone.svg" alt="telefon">
+                    <img src="img/smartphone.svg" alt="telefon" class="contact__icon">
                 </div>
                 <div>
                     <h3>Zadzwoń</h3>
