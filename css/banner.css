@@ -21,12 +21,13 @@
     right: 0;
     opacity: 0.8;
     position: absolute;
-    transition: all 5s;
+    transition-delay: 5s;
+    transition: 3s;
     z-index: 2;
 }
 
-.opacity:hover {
-    opacity: 0.7;
+.intro:hover {
+
 }
 
 .banner__text-header {
@@ -35,7 +36,6 @@
     margin-bottom: 10px;
     position: relative;
     z-index: 3;
-    user-select: none;
 }
 
 @media (max-width: 768px) {
@@ -46,12 +46,11 @@
 
 .banner__text-paragraph {
     top: 100px;
-    color: #999;
+    color: var(--color-light);
     font-size: 24px;
     margin: 20px 0;
     position: relative;
     z-index: 3;
-    user-select: none;
 }
 
 @media (max-width: 768px) {
@@ -60,9 +59,16 @@
     }
 }
 
+@media (max-width: 399px) {
+    .banner__text-paragraph {
+        font-size: 18px;
+    }
+}
+
 .banner__button {
     top: 100px;
-    border: 3px #ffd727 solid;
+    border: 3px var(--color-accent) solid;
+    border-radius: 3px;
     text-decoration: none;
     text-transform: uppercase;
     color: white;
