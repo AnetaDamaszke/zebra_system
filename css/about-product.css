@@ -39,7 +39,7 @@
 
 .about-product__description-header {
     text-transform: uppercase;
-    color: #ffd727;
+    color: var(--color-accent);
     font-size: 28px;
     font-weight: bold;
 }
@@ -53,7 +53,7 @@
 
 .about-product__description-parapgraph {
     line-height: 1.7;
-    color: #555;
+    color: var(--color-primary);
 }
 
 .about-product__button-box {
@@ -62,11 +62,11 @@
 }
 
 .about-product__button {
-    border: 3px #ffd727 solid;
+    border: 3px var(--color-accent) solid;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    color: var(--color-primary);
     padding: 10px 15px;
     position: relative;
     margin: 20px auto;
@@ -74,7 +74,7 @@
 }
 
 .about-product__button:hover {
-    color: #999;
+    color: var(--color-light);
     animation-name: button;
     animation-delay: 0.3s;
     animation-duration: 3s;
