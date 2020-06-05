@@ -1,7 +1,7 @@
 .montage {
     display: flex;
     align-items: center;
-    margin-bottom: ;
+    margin-bottom: 50px;
 }
 
 @media (max-width: 1024px) {
@@ -45,6 +45,7 @@
 
 .montage__file {
     border: 3px #ffd727 solid;
+    border-radius: 3px;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
@@ -53,6 +54,7 @@
     position: relative;
     margin: 20px auto;
     transition: 1s;
+    z-index: -1;
 }
 
 .montage__file:hover {
