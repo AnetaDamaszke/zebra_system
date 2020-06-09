@@ -21,13 +21,13 @@
     right: 0;
     opacity: 0.8;
     position: absolute;
-    transition-delay: 5s;
+    transition-delay: 2s;
     transition: 3s;
     z-index: 2;
 }
 
 .intro:hover {
-
+    opacity: 0.9;
 }
 
 .banner__text-header {
