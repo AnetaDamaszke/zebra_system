@@ -1,0 +1,32 @@
+.icon-box {
+    background: var(--color-primary);
+    text-align: center;
+    margin-top: 30px;
+    transform: 0.5s;
+}
+
+.icon-box__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box__item {
+    margin: 40px;
+    font-weight: solid;
+}
+
+.icon__img {
+    width: 40px;
+}
+
+.icon-box__header {
+    color: var(--color-light);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icon-box__paragraph {
+    color: var(--color-light);
+
+}

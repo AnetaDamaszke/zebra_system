@@ -1,0 +1,50 @@
+.reviews {
+    background-image: url('/img/banner.png');
+    background-position: center;
+    text-align: center;
+    margin-top: 30px;
+    transform: 0.5s;
+}
+
+.reviews__opacity {
+    background-color: black;
+    opacity: 0.9;
+}
+
+
+.reviews__header {
+    text-transform: uppercase;
+    color: #ffd727;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.reviews__box {
+    display: flex;
+}
+
+@media (max-width: 769px) {
+    .reviews__box {
+        flex-direction: column;
+    }
+}
+
+.reviews__item {
+    color: var(--color-light);
+    line-height: 1.5;
+    margin: 30px;
+    transition: 1s;
+    position: relative;
+    z-index: 2;
+}
+
+.reviews__item::before {
+    content: url('/img/quote-sign.svg');
+    border: none;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: 1;
+}
+
