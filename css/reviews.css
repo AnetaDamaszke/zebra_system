@@ -16,7 +16,7 @@
 
 .reviews__header {
     text-transform: uppercase;
-    color: #ffd727;
+    color: var(--color-accent);
     font-size: 36px;
     font-weight: bold;
     margin: 20px;

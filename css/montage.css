@@ -67,7 +67,7 @@
 
 .montage__description-header {
     text-transform: uppercase;
-    color: #ffd727;
+    color: var(--color-accent);
     font-size: 36px;
     font-weight: bold;
 }
@@ -106,7 +106,6 @@
 
 .montage__file {
     border: 3px  var(--color-light) solid;
-    border-radius: 3px;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
