@@ -1,6 +1,6 @@
 .gallery-header {
     text-transform: uppercase;
-    color: #ffd727;
+    color: var(--color-accent);
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 40px;

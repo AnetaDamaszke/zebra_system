@@ -111,7 +111,7 @@
     text-decoration: none;
     text-transform: uppercase;
     color: var(--color-primary);
-    padding: 15px;
+    padding: 10px 15px;
     position: relative;
     margin: 20px auto;
     transition: 1s;

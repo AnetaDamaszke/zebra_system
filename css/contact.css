@@ -1,3 +1,116 @@
+.container2 {
+    width: 760px;
+    margin: auto;
+} 
+
+.contact {
+    display: block;
+    margin: 0 40px;
+}
+
+.contact__header {
+    text-transform: uppercase;
+    color: var(--color-accent);
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact_paragraph {
+    color: var(--color-primary);
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0;
+}
+
+.contact-box__item {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+    margin: 0 30px;
+}
+
+.contact__text {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.contact__text h4 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.contact__text a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.contact__text a:hover {
+    color: var(--color-accent);
+}
+
 .contact__icon {
-    width: 100px;
+    width: 70px;
+    margin: 0 20px;
+}
+
+.form {
+    margin: 0 20px;
+}
+
+.form__fields {
+    display: flex;
+    flex-wrap: wrap;
+    margin:-5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__field {
+    height: 35px;
+    width: calc(100%/3 - 10px);
+    margin: 5px;
+    padding: 10px;
+    border: 2px var(--color-primary) solid;
+    overflow: hidden;
+}
+
+.form__field--full-row {
+    width: 100%;
+}
+
+.form__field::placeholder {
+    color: var(--color-light);
+}
+
+.form__button {
+    display: block;
+    margin: 20px auto 0 auto;
+    background: none;
+    border: 3px  var(--color-accent) solid;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    padding: 10px 15px;
+    position: relative;
+    margin: 20px auto;
+    transition: 1s;
+}
+
+.form__button:hover {
+    color: var(--color-light);
 }

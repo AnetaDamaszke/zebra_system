@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/reviews.css">
     <link rel="stylesheet" href="css/icon-box.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
@@ -189,43 +190,45 @@
     </div>
 
     <section class="icon-box">
-        <div class="container">
-            <div class="icon-box__items">
-                <div class="icon-box__item">
-                    <img src="OBRAZEK1" alt="" class="icon__img">
-                    <h4 class="icon-box__header">
-                        Solidna konstrukcja
-                    </h4>
-                    <p class="icon-box__paragraph">boki z podwójnej płyty</p>
-                </div>
-                <div class="icon-box__item">
-                    <img src="OBRAZEK2" alt="" class="icon__img">
-                    <h4 class="icon-box__header">
-                        Szeroka gama kolorów
-                    </h4>
-                    <p class="icon-box__paragraph">ponad 50 odcieni płyt</p>
-                </div>
-                <div class="icon-box__item" class="icon__img">
-                    <img src="OBRAZEK3" alt="">
-                    <h4 class="icon-box__header">
-                        Stalowy stelaż
-                    </h4>
-                    <p class="icon-box__paragraph">na sprężynach gazowych</p>
-                </div>
-                <div class="icon-box__item" class="icon__img">
-                    <img src="OBRAZEK4" alt="">
-                    <h4 class="icon-box__header">
-                        Łatwy montaż
-                    </h4>
-                    <p class="icon-box__paragraph">instrukcja w zestawie</p>
+        <div class="icon-box__opacity">
+            <div class="container">
+                <div class="icon-box__items">
+                    <div class="icon-box__item">
+                        <img src="OBRAZEK1" alt="" class="icon__img">
+                        <h4 class="icon-box__header">
+                            Solidna konstrukcja
+                        </h4>
+                        <p class="icon-box__paragraph">boki z podwójnej płyty</p>
+                    </div>
+                    <div class="icon-box__item">
+                        <img src="OBRAZEK2" alt="" class="icon__img">
+                        <h4 class="icon-box__header">
+                            Szeroka gama kolorów
+                        </h4>
+                        <p class="icon-box__paragraph">ponad 50 odcieni płyt</p>
+                    </div>
+                    <div class="icon-box__item" class="icon__img">
+                        <img src="OBRAZEK3" alt="">
+                        <h4 class="icon-box__header">
+                            Stalowy stelaż
+                        </h4>
+                        <p class="icon-box__paragraph">na sprężynach gazowych</p>
+                    </div>
+                    <div class="icon-box__item" class="icon__img">
+                        <img src="OBRAZEK4" alt="">
+                        <h4 class="icon-box__header">
+                            Łatwy montaż
+                        </h4>
+                        <p class="icon-box__paragraph">instrukcja w zestawie</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2 class="contact__head">
+    <div class="container2">
+        <section id="contact">
+            <h2 class="contact__header">
                 KONTAKT
             </h2>
             <p class="contact_paragraph">
@@ -234,27 +237,38 @@
             <div class="contact-box">
                 <div class="contact-box__item">
                     <img src="img/email.svg" alt="email" class="contact__icon">
+                    <div class="contact__text">
+                        <h4>Napisz do nas</h4>
+                        <a href="mailto:kontakt@zebrasystem.pl">kontakt@zebrasystem.pl</a>
+                    </div>
                 </div>
-                <div>
-                    <h4>Napisz</h4>
-                    <p>kontakt@zebrasystem.pl</p>
-                </div>
-            </div>
-            <div class="contact-box">
-                <div>
+                <div class="contact-box__item">
                     <img src="img/smartphone.svg" alt="telefon" class="contact__icon">
-                </div>
-                <div>
-                    <h3>Zadzwoń</h3>
-                    <p>605-381-207</p>
+                    <div class="contact__text">
+                        <h4>Zadzwoń</h3>
+                            <a href="tel:48605381207">605-381-207</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+            <form class="form">
+                <div class="form__fields">
+                    <input name="name" required placeholder="Imię i nazwisko" class="form__field">
+                    <input name="phone" required placeholder="Numer telefonu" class="form__field">
+                    <input name="email" type="email" required placeholder="E-mail" class="form__field">
+                    <textarea placeholder="Tekst wiadomości" class="form__field form__field--full-row" name="content"
+                    required rows="10">
+                    </textarea>
+                </div>
+                <button class="form__button">
+                    wyślij
+                </button>
+            </form>
+        </section>
+    </div>
 
 
     <footer class="footer">
-        <div class="footer__inner">
+        <div class="footer__items">
             <img src="img/logo zebra.png" alt="logo" class="footer__logo">
             <p class="footer__paragraph">
                 &copy; Zebra System 2020
