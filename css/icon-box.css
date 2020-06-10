@@ -1,5 +1,5 @@
 .icon-box {
-    background: url('https://github.com/AnetaDamaszke/zebra_system/blob/master/img/banner.png?raw=true');
+    background: url('/img/banner.png');
     background-position: center;
     background-size: cover;
     text-align: center;

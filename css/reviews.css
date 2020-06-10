@@ -1,5 +1,5 @@
 .reviews {
-    background-image: url('https://github.com/AnetaDamaszke/zebra_system/blob/master/img/banner.png?raw=true');
+    background-image: url('/img/banner.png');
     background-size: cover;
     background-position: center;
     text-align: center;

@@ -1,5 +1,5 @@
 .banner {
-    background: url('https://github.com/AnetaDamaszke/zebra_system/blob/master/img/banner.png?raw=true');
+    background: url('/img/banner.png');
     width: 100%;
     height: 100vh;
     background-position: center center;
