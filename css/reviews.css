@@ -5,6 +5,7 @@
     text-align: center;
     margin-top: 30px;
     transform: 0.5s;
+    width: 100%;
 }
 
 .reviews__opacity {
@@ -41,7 +42,7 @@
 }
 
 .reviews__item::before {
-    content: url('/img/quote-sign.svg');
+    content: url('/img/quote-sign.png');
     border: none;
     position: absolute;
     top: -20px;

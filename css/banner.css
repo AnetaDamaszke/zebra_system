@@ -68,7 +68,6 @@
 .banner__button {
     top: 100px;
     border: 3px var(--color-accent) solid;
-    border-radius: 3px;
     text-decoration: none;
     text-transform: uppercase;
     color: white;

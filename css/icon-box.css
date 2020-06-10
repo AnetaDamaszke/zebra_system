@@ -8,6 +8,12 @@
     margin-bottom: 80px;
 }
 
+@media (max-width: 399px) {
+    .icon-box {
+        margin-bottom: 50px;
+    }
+}
+
 .icon-box__opacity {
     background-color: black;
     opacity: 0.9;
@@ -17,6 +23,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 769px) {
+    .icon-box__items {
+        flex-direction: column;
+    }
 }
 
 .icon-box__item {

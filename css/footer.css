@@ -4,15 +4,35 @@
     margin-top: 60px;
 }
 
+@media (max-width: 399px) {
+    .footer {
+        padding: 30px;
+    }
+}
+
 .footer__items {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+@media (max-width: 399px) {
+    .footer__items {
+        display: block;
+        text-align: center;
+    }
+    
+}
+
 .footer__logo {
     width: 200px;
 } 
+
+@media (max-width: 399px) {
+    .footer__logo {
+        width: 150px;
+    } 
+}
 
 .footer__paragraph {
     font-size: 18px;
