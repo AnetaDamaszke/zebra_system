@@ -22,6 +22,12 @@
     margin: 20px;
 }
 
+@media (max-width: 769px) {
+    .reviews__header {
+        padding-top: 20px;
+    }
+}
+
 .reviews__box {
     display: flex;
 }
