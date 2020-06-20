@@ -86,8 +86,7 @@
 }
 
 .navigation__menu-item:hover {
-    outline: 3px var(--color-accent) solid;
-    border-radius: 3px;
+    background-color: var(--color-light);
 }
 
 .navigation__menu-link {

@@ -1,5 +1,5 @@
 .reviews {
-    background-image: url('/img/banner.png');
+    background-image: url('../img/banner.png');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -48,7 +48,7 @@
 }
 
 .reviews__item::before {
-    content: url('/img/quote-sign.png');
+    content: url('../img/quote-sign.png');
     border: none;
     position: absolute;
     top: -20px;

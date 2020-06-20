@@ -3,7 +3,7 @@
     margin: auto;
 } 
 
-@media (max-width: 399px){
+@media (max-width: 767px){
     .container2 {
         width: 100%;
     } 
@@ -40,7 +40,7 @@
     margin: 60px 0;
 }
 
-@media (max-width: 399px){
+@media (max-width: 767px){
     .contact-box {
         display: block;
         text-align: left;
@@ -53,7 +53,7 @@
     font-size: 18px;
     align-items: center;
     text-align: center;
-    margin: 0 30px;
+    margin: 20px 30px;
 }
 
 .contact__text {
@@ -110,7 +110,7 @@
     transition: 1s;
 }
 
-@media (max-width: 399px) {
+@media (max-width: 767px) {
     .form__field {
     width: 100%;
     }
