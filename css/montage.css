@@ -43,6 +43,7 @@
 
 .montage__description {
     margin-right: 50px;
+    text-align: center;
 }
 
 @media (max-width: 1204px) {

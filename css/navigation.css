@@ -87,7 +87,7 @@
 }
 
 .navigation__menu-item:hover {
-    background-color: var(--color-light);
+    border: var(--color-accent);
 }
 
 .navigation__menu-link {
