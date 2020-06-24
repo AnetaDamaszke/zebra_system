@@ -55,6 +55,12 @@
     }
 }
 
+@media (min-width: 1180px) {
+    .banner__text-header {
+        font-size: 52px;
+    }
+}
+
 .banner__text-paragraph {
     top: 100px;
     color: var(--color-light);

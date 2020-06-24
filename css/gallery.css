@@ -37,6 +37,12 @@
     transition: transform 1s;
 }
 
+@media (min-width: 991px) {
+    .gallery_img {
+        margin: 1vw;
+    }
+}
+
 .gallery_img:hover {
     transform: scale(1.5);
 }

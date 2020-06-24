@@ -2,6 +2,7 @@
     background-image: url('../img/banner.png');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     text-align: center;
     margin-top: 30px;
     transform: 0.5s;
