@@ -137,6 +137,7 @@
     margin: 20px auto 0 auto;
     background: none;
     border: 3px  var(--color-accent) solid;
+    border-radius: 3px;
     cursor: pointer;
     font-weight: bold;
     text-decoration: none;

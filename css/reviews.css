@@ -10,7 +10,7 @@
 
 .reviews__opacity {
     background-color: black;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 
@@ -41,7 +41,7 @@
 .reviews__item {
     color: var(--color-light);
     line-height: 1.5;
-    margin: 30px;
+    margin: 50px;
     transition: 1s;
     position: relative;
     z-index: 2;

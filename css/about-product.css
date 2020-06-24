@@ -82,6 +82,7 @@
 
 .about-product__file {
     border: 3px  var(--color-light) solid;
+    border-radius: 3px;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;

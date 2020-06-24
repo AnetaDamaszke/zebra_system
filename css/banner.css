@@ -5,11 +5,6 @@
     background-position: center center;
     background-size: cover;
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
     z-index: 0;
 }
 
@@ -19,15 +14,32 @@
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: 0.8;
+    opacity: 0.05;
     position: absolute;
     transition-delay: 2s;
-    transition: 3s;
-    z-index: -1;
+    transition: 2.5s;
+    z-index: 0;
 }
 
 .intro:hover {
-    opacity: 0.9;
+    opacity: 0.8;
+}
+
+.banner__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    transition: 2.5s;
+    z-index: 3;
+}
+
+.banner__text:hover {
+    opacity: 1;
 }
 
 .banner__text-header {
@@ -35,7 +47,6 @@
     font-size: 48px;
     margin-bottom: 10px;
     position: relative;
-    z-index: 3;
 }
 
 @media (max-width: 768px) {
@@ -50,7 +61,6 @@
     font-size: 24px;
     margin: 20px 0;
     position: relative;
-    z-index: 3;
 }
 
 @media (max-width: 768px) {
@@ -68,6 +78,7 @@
 .banner__button {
     top: 100px;
     border: 3px var(--color-accent) solid;
+    border-radius: 3px;
     cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
@@ -76,4 +87,8 @@
     position: relative;
     margin: 20px 0;
     z-index: 2;
+    transition: 2.5s;;
 }
+
+.banner__button:hover {
+    background: rgba(0, 0, 0, 0.705);
