@@ -87,10 +87,6 @@
     }
 }
 
-.navigation__menu-item:hover {
-    outline: 3px var(--color-accent) solid;
-}
-
 .navigation__menu-link {
     color: black;
     text-decoration: none;
@@ -112,7 +108,7 @@
 }
 
 .navigation__menu-link:hover {
-    color: var(--color-primary);
+    color: var(--color-accent);
 }
 
 .navigation__mobile-button {

@@ -46,6 +46,7 @@
     color: var(--color-accent);
     font-size: 36px;
     font-weight: bold;
+    margin-top: 100px;
 }
 
 .about-product__description-parapgraph {
