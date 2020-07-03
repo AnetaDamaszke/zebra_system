@@ -1,0 +1,31 @@
+#cookies-message{ 
+    color: white; 
+    padding: 12px 10px; 
+    text-align: center; 
+    position: fixed; 
+    bottom:0px; 
+    left:0; 
+    right:0; 
+    background-color: rgba(0,0,0,0.6); 
+    z-index: 100000; 
+    box-shadow: 0 0 5px rgba(0,0,0,0.4); 
+    display: none;
+  }
+
+  #accept-cookies-checkbox{
+    font-weight: bold;
+    background-color: var(--color-accent); 
+    color: var(--color-primary); 
+    border: solid 1px var(--color-accent);
+    border-radius: 3px;
+    transition: all 0.5s; 
+    padding: 5px 10px; 
+    display: inline-block; 
+    margin-left: 10px; 
+    text-decoration: none; 
+    cursor: pointer;
+  }
+
+  #accept-cookies-checkbox:hover{ 
+    background-color: transparent; 
+  }

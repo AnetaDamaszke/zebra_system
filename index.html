@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/icon-box.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cookie_alert.css">
 </head>
 
 <body>
@@ -49,12 +50,12 @@
             </a>
             <ul class="navigation__menu js-navigation__menu">
                 <li class="navigation__menu-item">
-                    <a href="#home" class="navigation__menu-link">
+                    <a data-scroll href="#home" class="navigation__menu-link">
                         home
                     </a>
                 </li>
                 <li class="navigation__menu-item">
-                    <a href="#product" class="navigation__menu-link">
+                    <a data-scroll href="#product" class="navigation__menu-link">
                         o&nbsp;produkcie
                     </a>
                 </li>
@@ -251,7 +252,7 @@
                     <a class="lightboxClose" href="#!">x</a>
                     <a class="lightboxPrev" href="#img6">&lt;</a>
                     <a class="lightboxNext" href="#img8">&gt;</a>
-                    <img class="animate" src="img/gallery/7.JPG"/>
+                    <img class="animate" src="img/gallery/7.jpg"/>
                 </div>
                 <div class="lightbox animate" id="img8">
                     <a class="lightboxClose" href="#!">x</a>
@@ -361,6 +362,15 @@
             </p>
         </div>
     </footer>
+
+    <div id="cookies-message-container">
+        <div id="cookies-message">
+            Ta strona używa ciasteczek (cookies), dzięki którym nasz serwis może działać lepiej.
+            <a href="javascript:WHCloseCookiesWindow();" id="accept-cookies-checkbox">Rozumiem</a>
+        </div>
+    </div>
+
+    <script src="js/cookie.js"></script>
 
 </body>
 
