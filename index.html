@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/cookie_alert.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 
 <body>
@@ -327,7 +328,7 @@
                     <img src="img/email.svg" alt="email" class="contact__icon">
                     <div class="contact__text">
                         <h4>Napisz do nas</h4>
-                        <a href="mailto:kontakt@zebrasystem.pl">kontakt@zebrasystem.pl</a>
+                        <a href="mailto:lozko.pegaz@gmail.com">lozko.pegaz@gmail.com</a>
                     </div>
                 </div>
                 <div class="contact-box__item">
@@ -338,19 +339,24 @@
                     </div>
                 </div>
             </div>
-            <form class="form">
-                <div class="form__fields">
-                    <input name="name" required placeholder="Imię i nazwisko" class="form__field">
-                    <input name="phone" required placeholder="Numer telefonu" class="form__field">
-                    <input name="eadres" type="email" required placeholder="E-mail" class="form__field">
-                    <textarea placeholder="Tekst wiadomości" class="form__field form__field--full-row" name="content"
-                        rows="10"></textarea>
-                </div>
-                <button class="form__button">
-                    wyślij
-                </button>
-            </form>
+            <div id="send_form_status"></div>
+            <form action="PHP/send.php" method="post" id="contactform">
+				<fieldset class="contactform__fields">
+					<input type="text" name="contact_name" placeholder="Imię i nazwisko" required="required" tabindex="1" class="contactform__field"/>
+                    <input type="email" name="contact_email" placeholder="Adres e-mail" required="required" tabindex="2" class="contactform__field"/>
+                    <input type="phone" name="contact_phone" placeholder="Numer telefonu" required="required" tabindex="3" class="contactform__field"/>
+					<textarea rows="5" columns="10" name="contact_body" placeholder="Treść wiadomości" required="required" tabindex="4" class="contactform__field contactform__field--full-row"></textarea>
+                    Podaj wynik: 
+                    <span class="form_check_1"></span> &times; 
+                    <span class="form_check_2"></span> = <input type="text" name="contact_check" maxlength="2" tabindex="5" />
+                    <input type="hidden" name="contact_check_data" value="" />
+                    <input type="submit" value="Wyślij" tabindex="6" class="contactform__button"/>
+				</fieldset>
+			</form>
         </section>
+		
+		<script src="js/form.js"></script>
+		
     </div>
 
 
