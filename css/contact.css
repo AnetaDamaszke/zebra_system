@@ -107,7 +107,7 @@
 
 .contactform__field {
     width: 100%/3;
-    margin: 6px 3px;
+    margin: 6px 0;
     padding: 10px;
     border: 2px var(--color-primary) solid;
     border-radius: 3px;

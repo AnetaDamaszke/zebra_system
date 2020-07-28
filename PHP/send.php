@@ -14,7 +14,7 @@ if (!isset($_POST['contact_email']) || empty($_POST['contact_email']) || !PHPMai
     $error = true;
 }
 
-if (!isset($_POST['contact_phone']) || empty($_POST['contact_phone'])) {
+if (!isset($_POST['contact_phone']) || empty($_POST['contact_phone'])) || !PHPMailer::ValidatePhone($_POST['contact_phone'])) {
     $error = true;
 }
 

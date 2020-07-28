@@ -785,6 +785,13 @@ class PHPMailer {
       }
   }
 
+
+  public static function ValidatePhone($phone) {
+        if (version_compare(PCRE_VERSION, '8.0') >= 0) {
+            return (boolean)preg_match('/^(?:\(?\?)?(?:[-\.\(\)\s]*(\d)){9}\)?$', $phone);
+        } 
+  }
+
   /////////////////////////////////////////////////
   // METHODS, MAIL SENDING
   /////////////////////////////////////////////////
